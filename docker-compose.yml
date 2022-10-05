@@ -1,0 +1,9 @@
+version: "3"
+services:
+  colors:
+    image: colors:latest
+    container_name: colors
+    build:
+      context: .
+    ports:
+      - "8080:8080"

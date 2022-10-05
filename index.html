@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>$background_color</title>
+  <style>
+    *,
+    html {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    html {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background-color: $background_color;
+      font-family: 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback';
+    }
+
+    td:first-of-type {
+      white-space: nowrap;
+    }
+
+    .highlight {
+      color: #7389ff;
+      font-size: 2em;
+    }
+
+    .center {
+      width: 100%;
+      height: 50%;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $font_color;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <table id="source" cellpadding="10">
+    <tr>
+      <td colspan=2>
+        <h1>Hello Again!</h1>
+        </td< /tr>
+    <tr>
+      <td colspan=2>&nbsp;</td< /tr>
+    <tr>
+      <td>Coloring</td>
+      <td>$background_color app</td>
+    </tr>
+    <tr>
+      <td>Hostname:</td>
+      <td>$hostname</td>
+    </tr>
+    <tr>
+      <td>Font color</td>
+      <td>$font_color</td>
+    </tr>
+    $headers
+  </table>
+</body>
+
+</html>
