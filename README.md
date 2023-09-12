@@ -1,10 +1,14 @@
-# Colors App
+# Colors App (Manual)
 
 Based on work by: https://github.com/bedis/colors_app
 
-## Description
+## Why is this called "Manual" ?
 
-Dummy nodejs application which returns a colored paged based on color found in a variable environment. Variable name is "COLOR". If COLOR is empty, then "white" is used. A color could be in the HTML form: COLOR=#0f0f0f
+The code is used for CI/CD examples in our trainings.
+This repo expects you change the background color of the app manually (see below).
+With it, we simulate changes happening in an exisiting code base and releaseing a new version.
+
+In the original version, you changed colors by changing the value of an environment variable.
 
 ## Changing color
 
@@ -27,8 +31,3 @@ docker-compose up -d
 ```
 http://localhost:8080
 ```
-
-## Infralovers/Commandemy usage
-
-- Used in this blog post
-- Used in a variety of CICD examples
